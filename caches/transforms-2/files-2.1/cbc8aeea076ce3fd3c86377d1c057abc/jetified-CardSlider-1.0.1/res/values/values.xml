@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="baseCardElevation">2dp</dimen>
+    <declare-styleable name="CardSliderIndicator">
+
+        <attr format="reference" name="defaultIndicator"/>
+        <attr format="reference" name="selectedIndicator"/>
+        <attr format="dimension" name="indicatorMargin"/>
+        <attr format="integer" name="indicatorsToShow"/>
+    </declare-styleable>
+    <declare-styleable name="CardSliderViewPager">
+
+        <attr format="dimension" name="cardSlider_pageMargin"/>
+        <attr format="dimension" name="cardSlider_otherPagesWidth"/>
+
+        <attr format="float" name="cardSlider_smallScaleFactor"/>
+        <attr format="float" name="cardSlider_smallAlphaFactor"/>
+
+        <attr format="dimension" name="cardSlider_minShadow"/>
+        <attr format="dimension" name="cardSlider_baseShadow"/>
+
+        <attr format="reference" name="cardSlider_indicator"/>
+
+        <attr format="integer" name="auto_slide_time"/>
+
+    </declare-styleable>
+    <declare-styleable name="ViewPager2">
+        <attr name="android:orientation"/>
+    </declare-styleable>
+</resources>
