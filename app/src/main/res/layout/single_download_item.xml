@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/img"-->
+<!--        style="@style/MyCardView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut"-->
+<!--        android:layout_margin="3dp"-->
+<!--        android:clipChildren="false"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:divider="@android:color/transparent"-->
+<!--        android:dividerHeight="0.0px"-->
+<!--        android:elevation="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:strokeColor="@color/black"-->
+<!--        app:strokeWidth="1dp"-->
+<!--        card_view:cardPreventCornerOverlap="false">-->
+
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/myimage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_200sdp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:contentDescription="TODO" />-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <LinearLayout
+
+        android:id="@+id/tv_progressLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/tv_download"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Download"
+        />
+
+    <Button
+        android:id="@+id/tv_install"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Install"
+        android:visibility="gone"
+
+
+        />
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

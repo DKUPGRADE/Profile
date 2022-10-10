@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar_top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/purple_500"-->
+<!--        android:minHeight="?attr/actionBarSize">-->
+
+<!--        &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/back"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="@dimen/_35sdp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_centerVertical="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:adjustViewBounds="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:padding="@dimen/_5sdp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:src="@drawable/ic_baseline_arrow_back_24" />&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/toolbar_title"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:text="BACKUP"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:textColor="#FFFFFFFF"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:textSize="@dimen/_15sdp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:textStyle="bold" />&ndash;&gt;-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_server_available_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:layout_marginBottom="55dp"
+        android:paddingEnd="5dp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="132dp" />
+</LinearLayout>
+

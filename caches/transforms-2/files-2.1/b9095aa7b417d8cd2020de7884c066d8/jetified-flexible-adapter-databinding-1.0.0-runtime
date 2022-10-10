@@ -1,0 +1,7 @@
+eu.davidea.flexibleadapter.databinding.BindingAdapters
+eu.davidea.flexibleadapter.databinding.BindingFlexibleAdapter
+eu.davidea.flexibleadapter.databinding.BindingFlexibleAdapter$WeakReferenceOnListChangedCallback
+eu.davidea.flexibleadapter.databinding.BuildConfig
+eu.davidea.flexibleadapter.databinding.DataBinderMapperImpl
+eu.davidea.flexibleadapter.databinding.DataBinderMapperImpl$InnerBrLookup
+eu.davidea.flexibleadapter.databinding.DataBinderMapperImpl$InnerLayoutIdLookup

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar_top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/purple_500"-->
+<!--        android:minHeight="?attr/actionBarSize">-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/back"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="@dimen/_35sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:adjustViewBounds="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="@dimen/_5sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/ic_baseline_arrow_back_24" />&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/toolbar_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:text="BACKUP"-->
+<!--            android:textColor="#FFFFFFFF"-->
+<!--            android:textSize="@dimen/_15sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_rpbp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

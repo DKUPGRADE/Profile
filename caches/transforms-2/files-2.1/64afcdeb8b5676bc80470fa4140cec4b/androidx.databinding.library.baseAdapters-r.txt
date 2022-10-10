@@ -1,0 +1,5 @@
+androidx.databinding.library.baseAdapters
+id dataBinding
+id onAttachStateChangeListener
+id onDateChanged
+id textWatcher

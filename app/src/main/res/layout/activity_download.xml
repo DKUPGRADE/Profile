@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DownloadActivity">
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar_top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/purple_500"-->
+<!--        android:minHeight="?attr/actionBarSize">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="@dimen/_35sdp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            android:src="@drawable/ic_baseline_arrow_back_24" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/toolbar_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="#FFFFFFFF"-->
+<!--            android:textSize="@dimen/_15sdp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_download"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Download"-->
+<!--        android:visibility="gone"/>-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_install"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Install"-->
+<!--        android:visibility="gone" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_download"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp" />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/rec_download">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/tablayout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/_36sdp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_margin="@dimen/_2sdp"-->
+<!--                app:tabGravity="center"-->
+<!--                app:tabIndicatorColor="#CFC037"-->
+<!--                app:tabMode="scrollable"-->
+<!--                app:tabSelectedTextColor="@color/black"-->
+<!--                app:tabTextAppearance="@style/MineCustomTabText" />-->
+
+
+<!--            <androidx.viewpager.widget.ViewPager-->
+<!--                android:id="@+id/viewpager"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_anchor="@+id/tablayout"-->
+<!--                app:layout_anchorGravity="center">-->
+
+
+<!--            </androidx.viewpager.widget.ViewPager>-->
+
+
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/idLoadingPB"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal"-->
+<!--                android:gravity="center_vertical|center_horizontal"-->
+<!--                android:visibility="gone"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/no_data_found"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:text="@string/no_data_found"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="25sp"-->
+<!--                android:visibility="gone" />-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/lay_upload_related"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_minecraftWorld"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:text="MinecraftWorld"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_behaviour_pack"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:text="Behaviour Pack"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_resource_pack"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:text="Resource Pack"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_pack_cat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp" />
+
+</LinearLayout>

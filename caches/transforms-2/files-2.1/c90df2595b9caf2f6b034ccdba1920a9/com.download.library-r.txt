@@ -1,0 +1,11 @@
+com.download.library
+string download_click_open
+string download_coming_soon_download
+string download_current_downloaded_length
+string download_current_downloading_progress
+string download_download_fail
+string download_file_download
+string download_paused
+string download_tips
+string download_trickter
+xml download_files_public
