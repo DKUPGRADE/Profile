@@ -130,7 +130,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@layout/dash_border"
+                        android:background="@drawable/dash_border"
                         android:gravity="center"
                         android:orientation="vertical">
 

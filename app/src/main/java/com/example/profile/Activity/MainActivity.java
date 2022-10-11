@@ -185,13 +185,13 @@ public class MainActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                         User_uid =  FirebaseAuth.getInstance().getCurrentUser().getUid();
+//                         User_uid =  FirebaseAuth.getInstance().getCurrentUser().getUid();
                         Log.d("Dk101", "onComplete: "+User_uid);
                         Log.d("TAG", "signInWithCredential:onComplete:" + task.isSuccessful());
                         if (task.isSuccessful()) {
                             Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
 
-                            addserver(User_uid);
+                            addserver();
 
                         } else {
                             Log.w("TAG", "signInWithCredential" + task.getException().getMessage());
@@ -214,54 +214,61 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void addserver(String User_uid) {
+    private void addserver() {
 
 
-            RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
+        RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
 
-            StringRequest request = new StringRequest(Request.Method.POST, "https://upgradeinfotech.in/projects/ModesToolbox/v1.1/new_user_profile.php", new com.android.volley.Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    Log.d("user_name", "onResponse: " + response);
-                    if (response.equals("New record created successfully") || response.equals("Updated successfully")) {
-                        Toast.makeText(MainActivity.this, "Data Add", Toast.LENGTH_SHORT).show();
+        StringRequest request = new StringRequest(Request.Method.POST, "https://upgradeinfotech.in/projects/ModesToolbox/v1.1/new_user_profile.php", new com.android.volley.Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("user_name", "onResponse: " + response);
+                if (response.equals("New record created successfully") || response.equals("Updated successfully")) {
+                    Toast.makeText(MainActivity.this, "Data Add", Toast.LENGTH_SHORT).show();
 
-                        gotoProfile();
-                    } else {
-                        Toast.makeText(MainActivity.this, "Data Not Add", Toast.LENGTH_SHORT).show();
-
-                    }
+                    gotoProfile();
+                } else {
+                    Toast.makeText(MainActivity.this, "Data Not Add", Toast.LENGTH_SHORT).show();
 
                 }
-            }, new com.android.volley.Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    error.printStackTrace();
-                    Toast.makeText(MainActivity.this, "Data Fail", Toast.LENGTH_SHORT).show();
 
-                    Log.v("error101", "response " + error);
+            }
+        }, new com.android.volley.Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(MainActivity.this, "Data Fail", Toast.LENGTH_SHORT).show();
+
+                Log.v("error101", "response " + error);
 //                                    Toast.makeText(MainActivity.this, "Response was not submit", Toast.LENGTH_SHORT).show();
-                }
-            }) {
-                @Override
-                protected Map<String, String> getParams() {
-                    Map<String, String> params = new HashMap<>();
-                    String m_androidId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
-                    Log.d("TAG21", "getParams: " + m_androidId);
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<>();
+                String m_androidId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+                Log.d("TAG21", "getParams: " + m_androidId);
 
-                    params.put("email", email1);
-                    params.put("user_name", name);
-                    params.put("D_ID", m_androidId);
-                    params.put("image_url", image);
-                    params.put("firebase_unique_id", User_uid);
-                    Log.d("TAG21", "handleSignInResult: " + User_uid);
+                params.put("email", email1);
+                params.put("user_name", name);
+                params.put("D_ID", m_androidId);
+                params.put("image_url", image);
+//                    params.put("firebase_unique_id", uid);
+                Log.d("TAG21", "handleSignInResult: " + image);
 
 
-                    return params;
-                }
-            };
-            queue.add(request);
-        }
+                return params;
+            }
+        };
+        queue.add(request);
+    }
 
 
     }
+
+
+
+
+
+
+//User_uid =  FirebaseAuth.getInstance().getCurrentUser().getUid();

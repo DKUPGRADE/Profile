@@ -89,10 +89,7 @@ public class DownloadActivity extends AppCompatActivity {
     DownloadAdapter downloadAdapter;
     ImageView back;
     TextView tv_minecraftWorld, tv_behaviour_pack, tv_resource_pack;
-    ViewPager viewPager;
-    TabLayout tabLayout;
-    public static int int_onresume = 0;
-    boolean check_ScrollingUp = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,6 +110,7 @@ public class DownloadActivity extends AppCompatActivity {
 //        btn_download = findViewById(R.id.btn_download);
 //        toolbar_title = findViewById(R.id.toolbar_title);
 //        btn_install = findViewById(R.id.btn_install);
+
         lay_upload_related = findViewById(R.id.lay_upload_related);
         rec_pack_cat = findViewById(R.id.rec_pack_cat);
         rec_download = findViewById(R.id.rec_download);
